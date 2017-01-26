@@ -47,21 +47,21 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* QWERTY
  * ,-----------------------------------------------------------------------------------.
- * |   `  |   Q  |   W  |   E  |   R  |   T  |   Y  |   U  |   I  |   O  |   P  |  \   |
+ * |   `  |   Q  |   W  |   E  |   R  |   T  |   Y  |   U  |   I  |   O  |   P  |  =   |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
  * | Func |   A  |   S  | MC/D |   F  |   G  |   H  |   J  |   K  |   L  |   ;  |  "   |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
- * |Sf/Tab|   Z  |   X  |   C  |   V  |   B  |   N  |   M  |   ,  |   .  |   /  |Shift |
+ * |Sf/Tab|   Z  |   X  |   C  |   V  |   B  |   N  |   M  |   ,  |   .  |   /  |  \   |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      | Ctrl | Alt  |  GUI | Bksp |SB/ESC|NB/Ent|Space |   -  |   =  |      |      |
+ * |      | Ctrl | Alt  |  GUI | Bksp |SB/ESC|NB/Ent|Space |   -  |      |      |      |
  * `-----------------------------------------------------------------------------------'
  *
  */
 [_QWERTY] = {
-  {KC_GRV,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,   KC_Y,   KC_U,   KC_I,    KC_O,   KC_P,    KC_BSLS},
-  {FUNC,    KC_A,    KC_S,    LT_D_MC, KC_F,    KC_G,   KC_H,   KC_J,   KC_K,    KC_L,   KC_SCLN, KC_QUOT},
-  {SFT_TAB, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,   KC_N,   KC_M,   KC_COMM, KC_DOT, KC_SLSH, KC_RSFT},
-  {_______, KC_LCTL, KC_LALT, KC_LGUI, KC_BSPC, ESC_SB, ENT_NB, KC_SPC, KC_MINS, KC_EQL, _______, _______}
+  {KC_GRV,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,   KC_Y,   KC_U,   KC_I,    KC_O,    KC_P,    KC_EQL },
+  {FUNC,    KC_A,    KC_S,    LT_D_MC, KC_F,    KC_G,   KC_H,   KC_J,   KC_K,    KC_L,    KC_SCLN, KC_QUOT},
+  {SFT_TAB, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,   KC_N,   KC_M,   KC_COMM, KC_DOT,  KC_SLSH, KC_BSLS},
+  {_______, KC_LCTL, KC_LALT, KC_LGUI, KC_BSPC, ESC_SB, ENT_NB, KC_SPC, KC_MINS, _______, _______, _______}
 },
 
 /* SYMBOL
